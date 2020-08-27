@@ -1,0 +1,22 @@
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>Attendance Code</title>
+        <link rel = "stylesheet" href = "{{ url_for('static', filename='css/template.css') }}">
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href = "{{ url_for('index') }}">Scan</a>
+                    <a href = "{{ url_for('atendees') }}">Atendees</a>
+                </li>
+            </ul>
+        </nav>
+
+        {% block content %}
+        {% endblock %}
+
+    </body>
+</html>
